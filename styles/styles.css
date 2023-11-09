@@ -3,10 +3,15 @@ html {
     box-sizing: border-box;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body {
     margin: 0;
     font-size: 1.6rem;
-    background-color: #8E8FFA;
+    background-color: #5C5470;
+    color: #FAF0E6;
 }
 
 /* globales */
@@ -16,20 +21,31 @@ h1 {
 }
 
 header {
-    color: #FFFFFF;
-    background-color: #190482;
+    background-color: #352F44;
     text-align: center;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
 
 form {
     max-width: 60rem;
-    background-color: #7752FE;
+    padding: 2rem;
+    background-color: #B9B4C7;
+    color: #352F44;
     margin: 5rem auto;
     border-radius: 2rem;
-    padding: 2rem;
 }
 
-label {
+/* label {
     display: block;
+} */
+
+input:not([type="radio"], [type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 2rem;
 }
