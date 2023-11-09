@@ -16,41 +16,74 @@
     </header>
     
     <form action="" id="survey-form">
-        <label for="name" id="name-label">Name: </label>
-        <input placeholder="Your name" required type="text" id="name">
 
-        <label for="email" id="email-label">Email: </label>
-        <input placeholder="Your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" id="email">
-        <label for="number" id="number-label">Age: </label>
-        <input placeholder="Your age" type="number" name="" id="number" pattern="[0-9]\d{0,100}" min="0" max="100">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Name: </label>
+            <input placeholder="Your name" required type="text" id="name">
+            <label for="email" id="email-label">Email: </label>
+            <input placeholder="Your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" id="email">
+            <label for="number" id="number-label">Age: </label>
+            <input placeholder="Your age" type="number" name="" id="number" pattern="[0-9]\d{0,100}" min="0" max="100">
+        </fieldset>
         
-        <select name="" id="dropdown">
-            <option selected disabled value="">-- Select --</option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
+        <fieldset>
+            <legend>Which language would you like to learn?</legend>
 
-        <div>
-            <label for=""><input type="radio" name="name-attribute" value="option-1"> Option 1</label>
-        </div>
-        <div>
-            <label for=""><input type="radio" name="name-attribute" value="option-2"> Option 2</label>
-        </div>
+            <select name="language" id="dropdown">
+                <option selected disabled value="">-- Select --</option>
+                <option value="">Java</option>
+                <option value="">Python</option>
+                <option value="">JavaScript</option>
+                <option value="">C++</option>
+                <option value="">C#</option>
+            </select>
+        </fieldset>
         
-        <div>
-            <label for=""><input type="checkbox" name="" value="option 1">Option 1</label>
-        </div>
-        <div>
-            <label for=""><input type="checkbox" name="" value="option 2">Option 2</label>
-        </div>
-        <div>
-            <label for=""><input type="checkbox" name="" value="option 3">Option 3</label>
-        </div>
+        <fieldset>
+            <legend>How many time would spend on studying?</legend>
 
-        <label for="additional">Additional Comments</label>
-        <textarea name="" id="additional" cols="30" rows="10"></textarea>
+            <div>
+                <label for=""><input type="radio" name="name-attribute" value="2" checked> more than 2hs</label>
+            </div>
+            <div>
+                <label for=""><input type="radio" name="name-attribute" value="4"> more than 4hs</label>
+            </div>
+        </fieldset>
         
-        <input id="submit" type="submit" value="Submit">
+        <fieldset>
+            <legend>What days of the week are you available?</legend>
+
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 1">Monday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 2">Tuesday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 3">Wednesday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 3">Thursday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 3">Friday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 3">Saturday</label>
+            </div>
+            <div>
+                <label for=""><input type="checkbox" name="" value="option 3">Sunday</label>
+            </div>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Additional Comments</legend>
+            <textarea name="" id="additional" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <input class="btn" id="submit" type="submit" value="Submit">
     </form>
 </body>
 </html>
