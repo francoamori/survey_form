@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: #8E8FFA;
+}
+
+/* globales */
+
+h1 {
+    margin: 0;
+}
+
+header {
+    color: #FFFFFF;
+    background-color: #190482;
+    text-align: center;
+    padding: 2rem;
+}
+
+form {
+    max-width: 60rem;
+    background-color: #7752FE;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+label {
+    display: block;
+}
